@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fetch() {
+            check="";
+             fe=document.getElementById("fe");
+             be =document.getElementById("be");
+             fs=document.getElementById("fs");
+
+            //  fe=document.f1.fe.value;
+             if(fe.checked==true){
+                check+=fe.value;
+                check+=" ";
+              
+             }  
+             if(be.checked==true){
+                check+=be.value;
+                check+=" ";
+             }
+             if(fs.checked==true){
+                check+=fs.value;
+                check+=" ";
+             }
+            check=check.bold();
+             
+            // check=fe+" "+ be +" "  +fs;
+            document.getElementById("p2").innerHTML = check;
+
+
+            name = document.f1.fname1.value;
+            document.getElementById("p1").innerHTML = "Welcome   " + name;
+        }
+    </script>
+</head>
+
+<body>
+
+
+
+    <form method="post" name="f1" autocomplete="off">
+        <fieldset>
+            <table>
+                <tr>
+                    <td>
+                        <label >Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="fname1" placeholder="Name"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- <label for="lname">Password :</label> -->
+                        <label>Age</label>
+                    </td>
+                    <td>
+                        <input type="text" name="lname" placeholder="Age"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>favourite programming language </p>
+                    </td>
+                    <td><input type="radio" id="html" name="fav_language" value="HTML">
+                        <label for="html">HTML</label><br>
+                        <input type="radio" id="css" name="fav_language" value="CSS">
+                        <label for="css">CSS</label><br>
+                        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                        <label for="javascript">JavaScript</label><br>
+                        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                        <label for="javascript">Nodejs</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>write few positive things about your favourite language</td>
+                    <td><textarea id="w3review" name="w3review" rows="4" cols="50"></textarea></td>
+                </tr>
+                <tr>
+                    <td>select your skillset</td>
+                    <td><input type="checkbox" id="fe" name="fe"value="front-end">
+                        <label > front-end</label><br>
+                        <input type="checkbox" id="be" value="back-end">
+                        <label > back-end</label><br>
+                        <input type="checkbox" id="fs" value="full-stack">
+                        <label > full-stack</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Enter phone number</p>
+                    </td>
+                    <td> <input type="text" id="number" name="number" placeholder="Enter your phone number"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Preffered workplace </p>
+                    </td>
+                    <td>
+                        <input type="radio">
+                        <label>Chennai</label><br>
+                        <input type="radio" >
+                        <label >Banglore</label><br>
+                        <input type="radio">
+                        <label >Pune</label><br>
+                        <input type="radio">
+                        <label >Noida</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="button" value="Submit" onclick="fetch()"></td>
+                </tr>
+
+                <legend>Candidate information</legend>
+
+
+
+
+
+            </table>
+        </fieldset>
+        <p id="p1"></p>
+        <p id="p2"></p>
+    </form>
+
+
+
+
+
+</body>
+
+</html>

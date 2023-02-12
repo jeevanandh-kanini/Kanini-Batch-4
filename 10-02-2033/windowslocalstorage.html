@@ -1,0 +1,50 @@
+
+<html lang="en">
+<head>
+    <script>
+        function fetch() {
+            document.getElementById("data").innerHTML = JSON.parse(localStorage.getItem("txtValue"));
+            document.getElementById("data1").innerHTML = JSON.parse(localStorage.getItem("txtValue1"));
+            document.getElementById("data2").innerHTML = JSON.parse(localStorage.getItem("txtValue2"));
+            document.getElementById("data3").innerHTML = JSON.parse(localStorage.getItem("txtValue3"));
+        }
+    </script>
+</head>
+
+<body onload="fetch();">
+    <fieldset>
+        <legend>Here is your data </legend>
+    <div >
+        <div style="font-size: 40px; color: red; margin: 0 auto;">
+            Here's Your data
+        </div>
+        <table>
+            <tr>
+                <td style=" font-size: 30px;  color: rgb(32, 7, 63); text-align: center;"><p>The Email is equal to:</p> </td>
+                <td style=" font-size: 30px;  color: rgb(32, 7, 63); text-align: center;"><span id="data"> Email</span></td>
+            </tr>
+            <tr>
+                <td style=" font-size: 30px;  color: rgb(32, 7, 63); text-align: center;"><p>The Password is equal to </p></td>
+                <td style=" font-size: 30px;  color: rgb(32, 7, 63); text-align: center;"><span id="data1"> Password</span></td>
+            </tr>
+            <tr>
+                <td style=" font-size: 30px;  color: rgb(32, 7, 63); text-align: center;">
+                    <p>The Mobile is equal to </p>
+
+                </td>
+                <td style=" font-size: 30px;  color: rgb(32, 7, 63); text-align: center;"><span id="data2"> Mobile</span></td>
+            </tr>
+            <tr>
+                <td style=" font-size: 30px;  color: rgb(32, 7, 63); text-align: center;">
+                    The Telephone is equal to
+
+                </td>
+                <td style=" font-size: 30px;  color: rgb(32, 7, 63); text-align: center;"><span id="data3"> Telephone</span></td>
+            </tr>
+        </table>
+      
+    </div>
+</fieldset>
+</body>
+
+</html>

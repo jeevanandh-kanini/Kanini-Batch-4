@@ -1,0 +1,12 @@
+HTML
+It didn’t support audio and video without the use of flash player support.
+It uses cookies to store temporary data.
+Does not allow JavaScript to run in browser.
+Vector graphics is possible in HTML with the help of various technologies such as VML, Silver-light, Flash, etc.
+It works with all old browsers.
+Not possible to draw shapes like circle, rectangle, triangle etc.
+HTML5
+It supports audio and video controls with the use of <audio> and <video> tags.
+It uses SQL databases and application cache to store offline data
+Allows JavaScript to run in background. This is possible due to JS Web worker API in HTML5.
+Vector graphics is additionally an integral a part of HTML5 like SVG and canvas.
