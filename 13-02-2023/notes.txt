@@ -1,0 +1,8 @@
+psuedo element  example 
+
+<style>
+p::first-letter{
+font-size:300%;
+}
+</style>
+
